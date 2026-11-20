@@ -259,3 +259,11 @@ section { position: relative; }
 @media (max-width: 640px) { .site-header .brand img { width: clamp(100px, calc(100vw - 342px), 150px); } }
 @media (max-width: 460px) { .nav .nav-home { display: none; } .site-header .brand img { width: clamp(100px, calc(100vw - 249px), 120px); } }
 @media (max-width: 360px) { .site-header .brand img { width: clamp(90px, calc(100vw - 225px), 100px); } }
+
+/* ---------- Readability: slightly darker, larger paragraph text on computers ---------- */
+:root { --ink-soft: #2C3244; }
+@media (min-width: 901px) {
+  body { font-size: 1.125rem; }
+  .about-body p, .band p, .offer-list .featured p { font-size: 1.125rem; }
+  .results p, .offer-list p { font-size: 1rem; }
+}
