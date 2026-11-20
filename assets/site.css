@@ -253,3 +253,9 @@ section { position: relative; }
   .about-photo { max-width: 260px; }
 }
 @media (max-width: 420px) { .nav .nav-home { display: none; } }
+
+/* ---------- Larger header logo ---------- */
+.site-header .brand img { width: clamp(150px, calc(100vw - 455px), 204px); }
+@media (max-width: 640px) { .site-header .brand img { width: clamp(100px, calc(100vw - 342px), 150px); } }
+@media (max-width: 460px) { .nav .nav-home { display: none; } .site-header .brand img { width: clamp(100px, calc(100vw - 249px), 120px); } }
+@media (max-width: 360px) { .site-header .brand img { width: clamp(90px, calc(100vw - 225px), 100px); } }
